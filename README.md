@@ -86,11 +86,14 @@ User → Router → View → ViewModel → Model → Database → Kembali ke Vie
 - index.php: router dan kontrol halaman
 
 ## Dokumentasi
-### Film
+### Daftar Film
+![Deskripsi gambar](Dokumentasi/film.gif)
 
 ### Studio
+![Deskripsi gambar](Dokumentasi/studio.gif)
 
 ### Jadwal
+![Deskripsi gambar](Dokumentasi/jadwal.gif)
 
 ### Booking
 ![Deskripsi gambar](Dokumentasi/booking.gif)
