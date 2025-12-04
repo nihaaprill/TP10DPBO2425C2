@@ -5,7 +5,7 @@ Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam ma
 ## Desain Tabel ##
 ![Deskripsi gambar](Dokumentasi/desain.png)
 
-a. movies
+# a. movies #
 - Menyimpan data film
 - Atribut: id_movie, title, genre, duration
 - Digunakan sebagai referensi jadwal
