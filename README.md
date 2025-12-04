@@ -95,19 +95,19 @@ Data tidak boleh dihapus jika masih digunakan sebagai foreign key pada tabel lai
 Karena itu, sistem melakukan pengecekan terlebih dahulu sebelum proses delete dijalankan.
 
 ## Flow Logika Penghapusan
-1. Hapus Film (movies)
+#### 1. Hapus Film (movies)
 - Cek apakah film masih dipakai di schedules.
 - Jika ya → gagalkan penghapusan.
 - Jika tidak → hapus data.
-2. Hapus Studio (studios)
+#### 2. Hapus Studio (studios)
 - Cek apakah studio masih dipakai di schedules.
 - Jika ya → tidak boleh dihapus.
 - Jika tidak → hapus.
-3. Hapus Jadwal (schedules)
+#### 3. Hapus Jadwal (schedules)
 - Cek apakah jadwal masih memiliki booking.
 - Jika ya → penghapusan diblokir.
 - Jika tidak → hapus.
-4. Hapus Booking (bookings)
+#### 4. Hapus Booking (bookings)
 - Tidak memiliki relasi ke bawah → aman untuk dihapus langsung.
 
 ## Stuktur Folder
