@@ -9,15 +9,18 @@ a. movies
 - Menyimpan data film
 - Atribut: id_movie, title, genre, duration
 - Digunakan sebagai referensi jadwal
+  
 b. studios
 - Menyimpan data studio bioskop
 - Atribut: id_studio, name, capacity
+  
 c. schedules
 - Menyimpan jadwal tayang
 - Atribut: id_schedule, id_movie, id_studio, showtime
 - Relasi:
   - id_movie → movies.id_movie
   - id_studio → studios.id_studio
+    
 d. bookings
 - Menyimpan pemesanan tiket
 - Atribut: id_booking, id_schedule, customer_name, seats
