@@ -10,18 +10,18 @@ Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam ma
 - Atribut: id_movie, title, genre, duration
 - Digunakan sebagai referensi jadwal
   
-b. studios
+### b. studios
 - Menyimpan data studio bioskop
 - Atribut: id_studio, name, capacity
   
-c. schedules
+### c. schedules
 - Menyimpan jadwal tayang
 - Atribut: id_schedule, id_movie, id_studio, showtime
 - Relasi:
   - id_movie → movies.id_movie
   - id_studio → studios.id_studio
     
-d. bookings
+### d. bookings
 - Menyimpan pemesanan tiket
 - Atribut: id_booking, id_schedule, customer_name, seats
 - Relasi:
