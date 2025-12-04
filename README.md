@@ -94,7 +94,7 @@ Aplikasi menggunakan logika penghapusan preventif untuk menjaga konsistensi data
 Data tidak boleh dihapus jika masih digunakan sebagai foreign key pada tabel lain.
 Karena itu, sistem melakukan pengecekan terlebih dahulu sebelum proses delete dijalankan.
 
-## Flow Logika Penghapusan
+### Flow Logika Penghapusan
 #### 1. Hapus Film (movies)
 - Cek apakah film masih dipakai di schedules.
 - Jika ya → gagalkan penghapusan.
