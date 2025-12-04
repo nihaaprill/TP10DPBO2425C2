@@ -3,7 +3,7 @@
 Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam mata kuliah Desain Pemogramana Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
 
 ## Desain Tabel ##
-![Deskripsi gambar](Dokumentasi/desain.png)
+![Deskripsi gambar](Dokumentasi/tabel10.png)
 
 ### a. movies ###
 - Menyimpan data film
@@ -76,7 +76,7 @@ Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam ma
 User → Router → View → ViewModel → Model → Database → Kembali ke View
 
 ## Stuktur Folder
-![Deskripsi gambar](Dokumentasi/desain.png)
+![Deskripsi gambar](Dokumentasi/strukturfolder.png)
 
 ### Penjelasan Singkat
 - Config/: koneksi database
@@ -86,5 +86,14 @@ User → Router → View → ViewModel → Model → Database → Kembali ke Vie
 - index.php: router dan kontrol halaman
 
 ## Dokumentasi
+### Film
+
+### Studio
+
+### Jadwal
+
+### Booking
+![Deskripsi gambar](Dokumentasi/booking.gif)
+
 
 
