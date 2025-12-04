@@ -28,6 +28,20 @@ Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam ma
   - id_schedule → schedules.id_schedule
   - Kesimpulan
 
+### Penjelasan Relasi:
+1. movies → schedules
+- Satu film dapat memiliki banyak jadwal tayang.
+- Relasi: 1-to-many
+- FK: schedules.id_movie → PK: movies.id_movie
+2. studios → schedules
+- Satu studio dapat dipakai untuk banyak jadwal.
+- Relasi: 1-to-many
+- FK: schedules.id_studio → PK: studios.id_studio
+3. schedules → bookings
+- Satu jadwal tayang dapat menerima banyak booking.
+- Relasi: 1-to-many
+- FK: bookings.id_schedule → PK: schedules.id_schedule
+
 ## Desain Program
 ### a. Model
 - Berisi fungsi akses database (CRUD)
@@ -74,6 +88,27 @@ Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam ma
 
 ### Alur Besar
 User → Router → View → ViewModel → Model → Database → Kembali ke View
+
+## Cascade Logic
+Aplikasi menggunakan logika penghapusan preventif untuk menjaga konsistensi data.
+Data tidak boleh dihapus jika masih digunakan sebagai foreign key pada tabel lain.
+Karena itu, sistem melakukan pengecekan terlebih dahulu sebelum proses delete dijalankan.
+
+## Flow Logika Penghapusan
+1. Hapus Film (movies)
+- Cek apakah film masih dipakai di schedules.
+- Jika ya → gagalkan penghapusan.
+- Jika tidak → hapus data.
+2. Hapus Studio (studios)
+- Cek apakah studio masih dipakai di schedules.
+- Jika ya → tidak boleh dihapus.
+- Jika tidak → hapus.
+3. Hapus Jadwal (schedules)
+- Cek apakah jadwal masih memiliki booking.
+- Jika ya → penghapusan diblokir.
+- Jika tidak → hapus.
+4. Hapus Booking (bookings)
+- Tidak memiliki relasi ke bawah → aman untuk dihapus langsung.
 
 ## Stuktur Folder
 ![Deskripsi gambar](Dokumentasi/stukturfolder.png)
