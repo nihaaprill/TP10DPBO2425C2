@@ -76,7 +76,7 @@ Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam ma
 User → Router → View → ViewModel → Model → Database → Kembali ke View
 
 ## Stuktur Folder
-![Deskripsi gambar](Dokumentasi/strukturfolder.png)
+![Deskripsi gambar](Dokumentasi/stukturfolder.png)
 
 ### Penjelasan Singkat
 - Config/: koneksi database
