@@ -29,15 +29,15 @@ Saya Niha April Miani dengan NIM 2402567 mengerjakan Tugas Praktikum 10 dalam ma
   - Kesimpulan
 
 ### Penjelasan Relasi:
-1. movies → schedules
+#### 1. movies → schedules
 - Satu film dapat memiliki banyak jadwal tayang.
 - Relasi: 1-to-many
 - FK: schedules.id_movie → PK: movies.id_movie
-2. studios → schedules
+#### 2. studios → schedules
 - Satu studio dapat dipakai untuk banyak jadwal.
 - Relasi: 1-to-many
 - FK: schedules.id_studio → PK: studios.id_studio
-3. schedules → bookings
+#### 3. schedules → bookings
 - Satu jadwal tayang dapat menerima banyak booking.
 - Relasi: 1-to-many
 - FK: bookings.id_schedule → PK: schedules.id_schedule
